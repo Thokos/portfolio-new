@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color:white;
+  background-color:#F3F3F5;
   color:black;
 }
 
@@ -12,7 +12,7 @@ p {
   color:#0C0F1E;
   font-family:'inter',sans-serif;
   font-weight: 400;
-  font-size:17px;
+  font-size:22px;
   line-height:150%;
 }
 
@@ -58,11 +58,12 @@ h3 {
 }
 
 h4 {
-  padding-bottom:32px;
-  margin-bottom:0px;
-  font-size:32px;
-  font-weight:700;
-  line-height: 150%;
+  font-size:36px;
+  padding-top:32px;
+  color:#0C0F1E;
+  font-weight: 700;
+  text-align:left;
+  margin-bottom:16px;
 }
 
 h5 {
@@ -83,6 +84,23 @@ h5 {
 
 .txt-black{
   color:black !important;
+}
+
+.button {
+  font-weight:700;
+  border:3px solid #0C0F1E;
+  font-size:20px;
+  line-height: 30px;
+  padding: 12px 24px;
+  color:#0C0F1E;
+  border-radius:10px ;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  color:white;
+  background-color: #0C0F1E;
+  text-decoration: none;;
 }
 
 .txt-center{
@@ -116,6 +134,11 @@ h5 {
 .no-index{
   z-index: 0 !important;
 }
+
+.one-index {
+  z-index: 1;
+}
+
 
 .row{
   padding:0;
@@ -221,14 +244,14 @@ h5 {
 }
 
 #in-short{
-  padding-top:250px;
+  padding-top:350px;
   padding-bottom:70px;
   background-color: white;
   z-index:0;
 }
 
 #my-process{
-  padding-top:160px;
+  padding-top:130px;
   padding-bottom:160px;
 }
 
@@ -263,6 +286,10 @@ h5 {
 
 .padding-top-3{
   padding-top:128px;
+}
+
+.margin-top{
+  margin-top:40px;
 }
 
 .ui-padding {
@@ -330,25 +357,21 @@ h5 {
   background-position:50%;
 }
 
-.project-home{
-  height:756px;
+
+
+.hpa-iphone-image{
+  width:100%;
 }
 
-.view-project {
-  font-weight: 500;
-  font-size: 20px;
-  color: #4964EA;
-}
-
-.mockup-img{
-  width:200px;
+.project-wrapper {
+  max-width:750px;
 }
 
 .circle {
   position:absolute;
   width:600px;
   height:600px;
-  background-color:#F3F3F5 ;
+  background-color:white ;
   border-radius: 50%;
   z-index: -2;
   margin-left: auto;
@@ -361,11 +384,10 @@ h5 {
   margin-bottom: auto;
 }
 
-
 .circle-2 {
   position:absolute;
-  width:500px;
-  height:500px;
+  width:750px;
+  height:750px;
   background-color: #F3F3F5;
   border-radius: 50%;
   margin-left: auto;
@@ -374,11 +396,18 @@ h5 {
   left: 0;
   right: 0;
   margin-bottom: auto;
+  text-align: center;
 }
 
 #projects{
   background-color: white;
   z-index:1;
+  padding-bottom:100px;
+}
+
+.homepage-project-paragraph{
+  
+  font-size:22px;
 }
 
 .scroll-down{
@@ -417,14 +446,9 @@ h5 {
 /* BEGIN Footer section */
 
 .footer{
-  padding-top:100px;
-  padding-bottom:100px;
+  height:80vh;
   background-color:white;
   text-align: center;
-}
-
-hr.new1 {
-  border-top: 1.5px solid #C0C4D4;
 }
 
 .underline-link{
@@ -620,7 +644,7 @@ hr.new1 {
     padding-bottom:10px;
   }
 
-  p{
+  p, .homepage-project-paragraph, .button{
     font-size: 16px;;
   }
 
@@ -632,8 +656,12 @@ hr.new1 {
     font-size:40px;
   }
 
-  h4 {
-    font-size:24px;
+  h4{
+    font-size: 28px;
+  }
+
+  .margin-top{
+    margin-top:30px;
   }
 
   .circle{
@@ -649,10 +677,6 @@ hr.new1 {
     padding: 1rem 5%;
   }
 
-  a.primary-button {
-    font-size:16px
-  }
-
   .horizontal-padding {
     padding-right:5%;
     padding-left:5%;
@@ -661,6 +685,16 @@ hr.new1 {
   .vertical-padding{
     padding-top:15%;
     padding-bottom:15%;
+  }
+
+  .circle-2 {
+    position:absolute;
+    width:650px;
+    height:650px;
+  }
+
+  .project-wrapper{
+    max-width:500px;
   }
 
   .horizontal-padding-1{
@@ -695,6 +729,7 @@ hr.new1 {
     width:100%;
   }
 
+  
   h1{
     font-size:62px;
   }
@@ -747,8 +782,8 @@ hr.new1 {
   }
 
   .circle-2 {
-    width:400px;
-    height:400px;
+    width:500px;
+    height:500px;
   }
 
   .underline-link{
@@ -758,16 +793,12 @@ hr.new1 {
   .footer {
     padding-top:64px;
     padding-bottom:64px;
+    height:50vh;
   }
 
-  .project-home{
-    height:556px;
+  #projects{
+    padding-bottom:100px;
   }
-
-  .mockup-img{
-    width:160px;
-  }
-
 
   .table-of-content-header {
     font-size:48px;
@@ -811,7 +842,7 @@ hr.new1 {
 
 }
 
-@media (max-width:550px){
+@media (max-width:576px){
 
   .underline-link{
     font-size:32px;
@@ -831,20 +862,8 @@ hr.new1 {
   }
 
   .circle-2 {
-    width:300px;
-    height:300px;
-  }
-
-  .view-project{
-    font-size:18px;
-  }
-
-  .project-home{
-    height:456px;
-  }
-
-  .mockup-img{
-    width:120px;
+    width:320px;
+    height:320px;
   }
 
   .about-me-section{
@@ -867,8 +886,8 @@ hr.new1 {
   }
 
   .experience-subheader{
-  margin-top:18px;
-  margin-bottom:8px;
+    margin-top:18px;
+    margin-bottom:8px;
   }
 
   .paperplane{
@@ -883,6 +902,14 @@ hr.new1 {
   .ui-block-2{
     padding-right:0px;
     padding-top:0px;
+  }
+
+  .max-width-iphone{
+    max-width:250px;
+  }
+
+  .max-width-laptop{
+    max-width:380px;
   }
 
 }
