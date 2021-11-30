@@ -4,8 +4,16 @@ html {
 }
 
 body {
-  background-color:#F3F3F5;
+  background-color:#edf0fd;
   color:black;
+}
+
+li {
+  margin-left:16px;
+}
+
+ul {
+  padding:0;
 }
 
 p {
@@ -17,34 +25,17 @@ p {
 }
 
 .linkurl {
-  text-decoration: none;
+  text-decoration: underline;
   color:#0C0F1E;
-  font-weight:800;
-  position:relative;
+  font-weight:500;
   line-height:130%;
-}
+  transition: 0.3s;
 
-.linkurl::after{
-  content: '';
-  position:absolute;
-  left:0;
-  bottom:-5px;
-  width:100%;
-  height:3px;
-  background-color:#0C0F1E;
-  transform: scaleX(0);
-  transition: transform 350ms ease-in;
-  transform-origin:inherit;
-}
-
-.linkurl:hover::after{
-  transform: scaleX(1);
-  transform-origin: center;
 }
 
 .linkurl:hover{
-  text-decoration: none;
-  color:#0C0F1E
+  text-decoration: underline;
+  color:#4964EA !important;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -146,7 +137,7 @@ h5 {
 }
 
 .bg-grey{
-  background-color: #F3F3F5;
+  background-color: #edf0fd;
 }
 
 .no-index{
@@ -168,7 +159,7 @@ h5 {
 }
 
 .view-height-full{
-  height:100vh;
+  height:101vh;
 }
 
 .view-height-eighty{
@@ -197,18 +188,6 @@ h5 {
   width:7%;
 }
 
-.position-center-left {
-  display:flex !important;
-  align-content: center;
-  justify-content: left;
-}
-
-.position-bottom-left {
-  display:flex !important;
-  align-content: flex-end;
-  justify-content: left;
-  flex: 1 0 auto;
-}
 
 .home-page-position {
   display:flex !important;
@@ -264,10 +243,10 @@ h5 {
   z-index:0;
 }
 
-.about-me-padding{
-  padding-top:128px;
-  padding-bottom:128px;
+.in-short-text{
+  text-align:center;
 }
+
 
 #my-process{
   padding-top:130px;
@@ -335,12 +314,11 @@ h5 {
 
 .custom-navigation{
   color:#0C0F1E;
-  transition: transform 250ms;
 }
 
 .custom-navigation:hover{
-  color:#0C0F1E;
-  opacity:0.8;
+  color:#4964EA;
+  transition: 0.3s;
 }
 
 .active{
@@ -348,13 +326,21 @@ h5 {
 }
 
 .navbar {
+  
   padding: 1rem 2rem;
   font-family: 'inter', sans-serif;
   font-weight:400;
   position:fixed;
   width:100%;
   z-index: 1;
-  background-color:rgba(255, 255, 255, 0.3);
+
+}
+
+.blur {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color:rgba(237, 240, 253, 0.8); */
 }
 
 .nav-link {
@@ -407,7 +393,7 @@ h5 {
   position:absolute;
   width:800px;
   height:800px;
-  background-color: #F3F3F5;
+  background-color: #edf0fd;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -465,9 +451,15 @@ h5 {
 /* BEGIN Footer section */
 
 .footer{
-  height:80vh;
-  background-color:white;
+  height:85vh;
+  background-color:#edf0fd;
   text-align: center;
+}
+
+.interested {
+  font-size:25px;
+  font-weight:500;
+  margin-bottom:8px;
 }
 
 .underline-link{
@@ -510,15 +502,16 @@ h5 {
   color:#0C0F1E;
   font-size:16px;
   text-align: center;
-  font-weight:400;
+  font-weight:500;
   position:relative;
+  text-transform: uppercase;
 }
 
 .footer-link::after{
   content: '';
   position:absolute;
   left:0;
-  bottom:0;
+  bottom:-4px;
   width:100%;
   height:2px;
   background-color:#0C0F1E;
@@ -580,7 +573,34 @@ h5 {
 /* END 100 DAY UI CHALLENGE SECTION */
 
 /* BEGIN ABOUT ME PAGE*/
+.resume{
+  width:120px;
+  height:120px;
+  background-color: #4964EA ;
+  color: white !important;
+  border-radius: 50%;
+  text-align:center;
+  font-size:20px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  align-content: center;
+  font-weight:400;
+  transition: transform .5s ease-in-out;
+  transition: 0.5s;
+}
 
+.resume:hover{
+  text-decoration: none;
+  transform: rotate(-30deg);
+  background-color: #3a50bb;
+}
+
+.about-me-padding{
+  padding-top:128px;
+  padding-bottom:128px;
+}
 
 /* END ABOUT ME PAGE */
 
@@ -615,7 +635,7 @@ h5 {
 }
 
 
-@media (max-width: 1170px) {
+@media (max-width: 1200px) {
 
   h1{
     font-size:80px;
@@ -625,9 +645,13 @@ h5 {
     padding-left:7%;
   }
 
-  .navbar{
-    background-color:rgba(255, 255, 255, 1);
-  } 
+  li {
+    margin-left:0 !important;
+  }
+
+  .nav-link, .navbar-nav {
+    padding:15px 0;
+  }
 
   #my-process{
     padding-top:80px;
@@ -638,6 +662,11 @@ h5 {
 @media (max-width: 990px) {
 
 
+  .about-me-padding{
+    padding-top:64px;
+    padding-bottom:64px;
+  }
+
   #in-short{
     padding-top:160px;
     padding-bottom:10px;
@@ -645,6 +674,10 @@ h5 {
 
  .homepage-project-paragraph, .button{
     font-size: 16px;
+  }
+
+  .button {
+    padding:10px 20px;
   }
 
   h2 {
@@ -789,6 +822,10 @@ h5 {
     height:500px;
   }
 
+  .interested {
+  font-size:20px
+  }
+
   .underline-link{
     font-size:45px;
   }
@@ -851,12 +888,29 @@ h5 {
     font-size:32px;
   }
 
+  .interested {
+  font-size:16px;
+  margin-bottom:8px;
+  }
+
+  p {
+    font-size:16px;
+  }
+
+  .in-short-text{
+    text-align:left;
+  }
+
   h1{
     font-size:40px;
   }
 
   h3{
     font-size:28px;
+  }
+
+  .about-me-h3 {
+    font-size:30px;
   }
 
   .circle {
@@ -872,11 +926,6 @@ h5 {
   .vertical-padding-2 {
     padding-top:10%;
     padding-bottom:10%;
-  }
-  
-  .txt-center{
-    margin-top:10px;
-    margin-bottom:10px;
   }
 
   .padding-bottom{
