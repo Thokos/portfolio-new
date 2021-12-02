@@ -38,7 +38,7 @@
 
     <!-- Nav Bar -->
     <div class="container-fluid">
-      <nav class="navbar row blur navbar-expand-xl">
+      <nav id="navbar" class="navbar row blur navbar-expand-xl">
         <a href="index.html"><img src="links/logo.png"></img></a>
         <button class="navbar-toggler custom-navigation" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler">MENU</span>
@@ -78,11 +78,13 @@
           </h1>
         </div>
       </div>
-  </section>
-
-  <div class="scroll-down rellax one-index " data-rellax-speed="-4">
+      
+  <div class="scroll-down rellax" data-rellax-speed="-9">
     <p style="color:#4964EA; font-size:16px;" class="medium mt-2 animate__animated  animate__bounceInUp ">scroll to explore</p>
   </div>
+  
+  </section>
+
 
 
 <!-- in short about me -->
@@ -163,7 +165,7 @@
     <div class="row vertical-padding-3 project-wrapper mx-auto">
       
     
-      <div class="circle-2"></div>
+      <div class="circle-2 d-none d-md-block d-lg-block d-xl-block"></div>
      
       <div class="col-lg-4 col-sm-6 d-none d-md-block ">
         <img src="links/hpa-iphone-1.png" class="hpa-iphone-image"></img>
@@ -178,7 +180,7 @@
       </div>
 
       <div class="col-lg-12">
-        <h4 class="txt-center">Hockey Planner App<span style="color:#4964EA;">.</span></h4>
+        <h4 class="txt-center padding-top-1">Hockey Planner App<span style="color:#4964EA;">.</span></h4>
       </div>
 
       <div class="col-lg-12">
@@ -186,14 +188,14 @@
         <p class="homepage-project-paragraph">Mobile application design, branding and protype. The app allows fieldhockey players to track the availabilty of the teammates.</p>
         
         <div class="margin-top">
-        <a href="first-project.html" class="button d-table mx-auto">View project</a>
+        <a href="hockey-planner-app.html" class="button d-table mx-auto">View project</a>
         </div>
       </div>
     </div>
 
     <div class="row vertical-padding-3 project-wrapper mx-auto">
       
-      <div class="circle-2"></div>
+      <div class="circle-2  d-none d-md-block d-lg-block d-xl-block"></div>
      
       <div class="col-lg-12 col-sm-12  mx-auto max-width-laptop">
         <img src="links/hybriq-laptop.png" class="hpa-iphone-image"></img>
@@ -202,7 +204,7 @@
       
 
       <div class="col-lg-12">
-        <h4 class="txt-center">Hybriq Canvas<span style="color:#4964EA;">.</span></h4>
+        <h4 class="txt-center padding-top-1">Hybriq Canvas<span style="color:#4964EA;">.</span></h4>
       </div>
 
       <div class="col-lg-12">
@@ -227,10 +229,10 @@
   </footer>
 
   <div class="row horizontal-padding-2 vertical-padding-1 bg-grey">
-    <div class="col-sm-3 col-12 txt-center"><a href="https://www.linkedin.com/in/thomas-koster-50b224151/" target="_blank" class="footer-link">Linkedin</a></div>
-    <div class="col-sm-3 col-12 txt-center"><a href="links/cv.jpg" target="_blank" class="footer-link">Resume</a></div>
-    <div class="col-sm-3 col-12 txt-center"><a href="https://soundcloud.com/thomaskoster-1" target="_blank" class="footer-link">Soundcloud</a></div>
-    <div class="col-sm-3 col-12 txt-center"><a href="https://dribbble.com/Tkosters" target="_blank" class="footer-link">Dribbble</a></div>
+    <div class="col-sm-3 col-12 footer-link-padding-mobile txt-center"><a href="https://www.linkedin.com/in/thomas-koster-50b224151/" target="_blank" class="footer-link">Linkedin</a></div>
+    <div class="col-sm-3 col-12 footer-link-padding-mobile txt-center"><a href="links/cv.jpg" target="_blank" class="footer-link">Resume</a></div>
+    <div class="col-sm-3 col-12 footer-link-padding-mobile txt-center"><a href="https://soundcloud.com/thomaskoster-1" target="_blank" class="footer-link">Soundcloud</a></div>
+    <div class="col-sm-3 col-12 footer-link-padding-mobile txt-center"><a href="https://dribbble.com/Tkosters" target="_blank" class="footer-link">Dribbble</a></div>
   </div>
 
 
@@ -238,6 +240,19 @@
 <script>
   var rellax = new Rellax('.rellax');
 </script>
+
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-75px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
 </body>
 
 
