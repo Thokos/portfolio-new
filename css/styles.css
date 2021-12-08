@@ -357,11 +357,6 @@ h5 {
 
 /* HOMEPAGE SECTION */
 
-.projects-hero-image {
-  background: #000000 url(../links/hero-image-hockeyplanner.jpg) left 40px no-repeat;
-  background-size:cover;
-  background-position:50%;
-}
 
 .hpa-iphone-image{
   width:100%;
@@ -431,6 +426,10 @@ h5 {
 
 .max-width-hpa{
   max-width: 1050px;
+}
+
+.solution-3{
+  padding-top:64px;
 }
 
 /* END Hockey Planner App SECTION */
@@ -717,6 +716,10 @@ h5 {
     max-width:500px;
   }
 
+  .solution-3{
+    padding-top:0;
+  }
+
   .horizontal-padding-1{
     padding-right:64px;
     padding-left:64px;
@@ -798,6 +801,18 @@ h5 {
   .vertical-padding-3{
     padding-top:64px;
     padding-bottom:64px;
+  }
+
+  .solution-3{
+    padding-top:32px;
+  }
+
+  .padding-mobile-bottom{
+    padding-bottom:32px;
+  }
+
+  .text-center-ipad-mobile{
+    text-align: center;
   }
 
   .circle{
