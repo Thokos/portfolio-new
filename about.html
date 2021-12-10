@@ -34,8 +34,7 @@
 </head>
 
 <body>
-
-  <section id="title">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 
     <!-- Nav Bar -->
     <div class="container-fluid">
@@ -66,34 +65,80 @@
       </nav>
     </div>
 
+    <section id="intro" class="padding-top-3 bg-white">
       <!-- Title -->
-      <div class="row view-height-full horizontal-padding-2 home-page-position 
-      animate__animated animate__bounceInUp">
-        <div class="circle rellax" data-rellax-speed="-5"></div>
-        <div class="col-lg-12 px-0">
+      <div id="about-me-start" class="row horizontal-padding-2 vertical-padding-2">
+        <div class="col-lg-6 ">
             
-            <h5>About me</h5>
-           <h1>
-            Let's Get To<br>
-            Know Me<span style="color:#4964EA;">.</span>
-          </h1>
+            <h2 class="txt-left padding-bottom-1">About me<span style="color:#4964EA;">.</span></h2>
+           <!-- <h5 class="txt-left padding-bottom-1">
+            I Design, Hockey, 
+            Disk Jockey,
+            Read Books & Play Video Games.
+           </h5> -->
+          <p>
+            Hi again, my name is Thomas<span style="color:#4964EA;"></span><br><br>
+            I'm a junior UX/UI designer living in Hoofddorp the Netherlands, 
+            interested in how to make better experiences for people online.
+            <br><br>
+            In 2019 I graduated as a Interactive Designer at the Media 
+            College based in Amsterdam. Later that year I got my first job as
+            a Junior UX/UI designer at a small tech start-up called Hybriq.
+            <br><br>
+            Now I'm looking for a new adventure as a Junior UX/UI designer. 
+            I want to push my boundries and learn more about design thinking, 
+            UI design, user research and even some coding.
+          </p>
+        </div>
+        <div class="col-lg-6 ">
+          <img src="links/image-of-me.jpg" class="mx-auto d-block"></img>
         </div>
       </div>
 
-      <div class="scroll-down rellax one-index " data-rellax-speed="-5">
-        <p style="color:#4964EA; font-size:16px;" class="medium mt-2 animate__animated  animate__bounceInUp ">scroll to explore</p>
-      </div>
+     
+
+  
       
   </section>
 
 
   <div class="about-me-padding bg-white">
   <!-- Begin Skills & Tools Section -->
-    <section id="skills-tool" class="bg-white one-index about-me-padding">
+    <section id="skills" class="bg-white one-index about-me-padding">
       <div class="row horizontal-padding-2 no-padding-l-r">
         <div class="col-lg-4 col-md-4 col-sm-12">
           <h3 class="about-me-h3">
-           My Skills & Tools<span style="color:#4964EA;">.</span>
+           My Skills<span style="color:#4964EA;">.</span>
+          </h3>
+        </div>
+
+        <div class="col-lg-2 d-none d-lg-block">
+        </div>
+    
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <p class="medium padding-bottom">Prototyping</p>
+          <p class="medium padding-bottom">Wireframing</p>
+          <p class="medium padding-bottom">User Research</p>
+          <p class="medium padding-bottom">Responsive Design</p>
+          <p class="medium padding-bottom">Animate(beginner)</p>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <p class="medium padding-bottom">HTML5</p>
+          <p class="medium padding-bottom">CS3</p>
+          <p class="medium padding-bottom">Bootstrap</p>
+          <p class="medium padding-bottom">SCSS (SASS)</p>
+          <p class="medium padding-bottom">Agile</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="tools" class="bg-white one-index about-me-padding">
+      <div class="row horizontal-padding-2 no-padding-l-r">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h3 class="about-me-h3">
+           My Tools<span style="color:#4964EA;">.</span>
           </h3>
         </div>
 
@@ -103,25 +148,17 @@
         <div class="col-lg-3 col-md-4 col-sm-6 col-6">
           <p class="medium padding-bottom">Figma</p>
           <p class="medium padding-bottom">Sketch</p>
-          <p class="medium padding-bottom">Adobe XD</p>
-          <p class="medium padding-bottom">Illustrator</p>
           <p class="medium padding-bottom">Photoshop</p>
-          <p class="medium padding-bottom">Hotjar</p>
-          <p class="medium padding-bottom">Axure</p>
-          <p class="medium padding-bottom">Prototyping</p>
-          <p class="medium padding-bottom">Wireframing</p>
+          <p class="medium padding-bottom">Illustrator</p>
+          <p class="medium padding-bottom">After Effects</p>
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-          <p class="medium padding-bottom">Responsive Design</p>
-          <p class="medium padding-bottom">Bootstrap</p>
-          <p class="medium padding-bottom">HTML</p>
-          <p class="medium padding-bottom">CSS</p>
+          <p class="medium padding-bottom">Hotjar</p>
+          <p class="medium padding-bottom">Slack</p>
           <p class="medium padding-bottom">Trello</p>
           <p class="medium padding-bottom">Jira</p>
-          <p class="medium padding-bottom">Slack</p>
-          <p class="medium padding-bottom">SCSS (SASS)</p>
-          <p class="medium padding-bottom">After Effects</p>
+          <p class="medium padding-bottom">Adobe XD</p>
         </div>
       </div>
     </section>
