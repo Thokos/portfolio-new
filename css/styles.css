@@ -22,7 +22,7 @@ p {
   font-family:'inter',sans-serif;
   font-weight: 400;
   font-size:18px;
-  line-height:150%;
+  line-height:30px;
   margin-bottom:0;
 }
 
@@ -117,6 +117,10 @@ h5 {
 
 .txt-center{
   text-align:center;
+}
+
+.txt-left{
+  text-align: left;
 }
 
 .medium{
@@ -344,7 +348,6 @@ h5 {
 
 .hpa-iphone-image{
   width:100%;
-  image-rendering: pixelated;
 }
 
 .hpa-hybriq-image{
@@ -392,6 +395,7 @@ h5 {
   z-index:1;
   padding-bottom:300px;
 }
+
 
 .homepage-project-paragraph{
   text-align: center;
@@ -581,6 +585,11 @@ h5 {
 /* END 100 DAY UI CHALLENGE SECTION */
 
 /* BEGIN ABOUT ME PAGE*/
+
+#about-me-start h5{
+  line-height:150%;
+}
+
 .resume{
   width:120px;
   height:120px;
