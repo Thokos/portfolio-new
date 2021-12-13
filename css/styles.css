@@ -602,7 +602,7 @@ h5 {
 
 .resume:hover{
   text-decoration: none;
-  transform: rotate(-30deg);
+  transform: scale(1.2);
   background-color:#0C0F1E;
 }
 
