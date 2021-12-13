@@ -33,6 +33,7 @@
 <button onclick="topFunction()" id="back-to-top" title="Go to top"> <img src="links/back-to-top.svg" style="width:40px; height:40px;"></img></button>
 
 <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 
     <!-- Nav Bar -->
@@ -66,7 +67,7 @@
 
 
 <section id="hpa-introduction" class=" bg-grey vertical-padding-3 max-width-hpa d-block mx-auto">
-  <div class="row padding-top-3">
+  <div class="row padding-top-3 bottom">
     <div class="col-lg-4 col-md-5 col-sm-12">
       <h4 class="bold" style="text-transform:uppercase;">Hockey Planner App<span style="color:#4964EA;">.</span></h4>
     </div>
@@ -83,7 +84,7 @@
       </p>
     </div>
   </div>
-  <div class="row padding-top-2">
+  <div class="row padding-top-2 bottom">
     <div class="col-lg-4 col-md-5 padding-bottom-mobile">
       <!-- <a href="#" class="button d-table">See prototype</a> -->
     </div>
@@ -116,7 +117,7 @@
   </div>
 
 
-  <div class="row padding-top-3 project-wrapper mx-auto">
+  <div class="row padding-top-3 project-wrapper mx-auto bottom">
     
       <div class="col-lg-4 col-sm-6 d-none d-md-block ">
         <img src="links/hpa-iphone-1.png" class="hpa-iphone-image"></img>
@@ -136,14 +137,14 @@
 <section id="hpa-introduction" class="bg-white vertical-padding-3">
   <div class="vertical-padding-3 max-width-hpa d-block mx-auto">
     <div class="row">
-      <div class="col-lg-4 col-md-4">
+      <div class="col-lg-4 col-md-4 left">
         <h4>The Problem<span style="color:#4964EA;">.</span></h4>
       </div>
 
       <div class="col-lg-1 d-none d-lg-block d-xl-block"> 
       </div>
 
-      <div class="col-lg-7 col-md-8">
+      <div class="col-lg-7 col-md-8 right">
         <p >At hockeyclub the Reigers lower teams have a way lower attendency compared to the first teams. This is especially the case at a training. 
           <span class="bold">Only 58% </span>of the players attend a training on average per week. </p>
       </div>
@@ -152,14 +153,14 @@
 
     <div class="vertical-padding-3 max-width-hpa d-block mx-auto" id="key-insights">
       <div class="row">
-        <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4 left">
           <h4>Key Insights<span style="color:#4964EA;">.</span></h4>
         </div>
   
         <div class="col-lg-1 d-none d-lg-block d-xl-block"> 
         </div>
   
-        <div class="col-lg-7 col-md-8">
+        <div class="col-lg-7 col-md-8 right">
           <p >By conducting research with some of the teams at the MHC De Reigers I found out that there were some more problems the teams are struggling with.
             <br><br>
             The Whats App groups were being spammed with messages excisting of the following questions
@@ -176,14 +177,14 @@
 
   <div class="vertical-padding-3 max-width-hpa d-block mx-auto">
     <div class="row">
-      <div class="col-lg-4 col-md-4">
+      <div class="col-lg-4 col-md-4 left">
         <h4>The Goal<span style="color:#4964EA;">.</span></h4>
       </div>
 
       <div class="col-lg-1 d-none d-lg-block d-xl-block"> 
       </div>
 
-      <div class="col-lg-7 col-md-8">
+      <div class="col-lg-7 col-md-8 right">
         <p >Since the attendency figures of a training is so low I want to increase that value with 
           <span class="bold">only 12% </span> to make a training more fun/competetive. 
           Aswell as tackle the questions stated at the <a href="#key-insights" class="linkurl bold">key insights</a> stated above this point.
@@ -193,14 +194,14 @@
 
   <div class="vertical-padding-3 max-width-hpa d-block mx-auto">
     <div class="row">
-      <div class="col-lg-4 col-md-4">
+      <div class="col-lg-4 col-md-4 left">
         <h4>Solutions<span style="color:#4964EA;">.</span></h4>
       </div>
 
       <div class="col-lg-1 d-none d-lg-block d-xl-block"> 
       </div>
 
-      <div class="row col-lg-6 col-md-8">
+      <div class="row col-lg-6 col-md-8 right">
       <div class="col-lg-6 col-md-4 padding-mobile-bottom">
         <p class="bold">01</p>
         <p class="padding-top medium">
@@ -225,7 +226,7 @@
 <section id="design-solutions">
   <div class="vertical-padding-3 max-width-hpa d-block mx-auto">
     <div class="row">
-      <div class="col-lg-12">
+      <div class="col-lg-12 fade">
         <h3 class="txt-center">Design Solutions<span style="color:#4964EA;">.</span></h3>
       </div>
     </div>
@@ -234,7 +235,7 @@
   <div class=" max-width-hpa mx-auto d-block">
     <div class="row">
 
-      <div class="col-lg-4 col-sm-10 col-md-6 col-12 my-auto mx-auto d-block padding-mobile-bottom text-center-ipad-mobile">
+      <div class="col-lg-4 col-sm-10 col-md-6 col-12 my-auto mx-auto d-block padding-mobile-bottom text-center-ipad-mobile left">
         <p class="bold">01. Clear overview</p>
         <p class="padding-top medium">
           Creating a clean overview where you can see all the information you need for your hockey match/training is one of the key functions of the
@@ -242,7 +243,7 @@
         </p>
     </div>
       
-      <div class="col-lg-4 col-sm-6 col-md-6 col-10 d-block mx-auto">
+      <div class="col-lg-4 col-sm-6 col-md-6 col-10 d-block mx-auto right">
       
       <script>(typeof navigator !== "undefined") && (function(root, factory) {
           if (typeof define === "function" && define.amd) {
@@ -288,7 +289,7 @@
     <div class="row">
 
 
-      <div class="col-lg-4 col-sm-6 order-sm-2 order-md-1 col-md-6 col-10 d-block mx-auto">
+      <div class="col-lg-4 col-sm-6 order-sm-2 order-md-1 col-md-6 col-10 d-block mx-auto left">
         
 
         <script>(typeof navigator !== "undefined") && (function(root, factory) {
@@ -327,7 +328,7 @@
       </script>
 
       </div>
-      <div class="col-lg-4 col-sm-10 order-sm-1 col-md-6 col-12 my-auto mx-auto d-block padding-mobile-bottom text-center-ipad-mobile ">
+      <div class="col-lg-4 col-sm-10 order-sm-1 col-md-6 col-12 my-auto mx-auto d-block padding-mobile-bottom text-center-ipad-mobile right">
         <p class="bold">02. Collect points & achievements</p>
         <p class="padding-top medium">
           Collect points by attending different type of hockey activities. For a training you collect more points, this will motivate people to attend a training.
@@ -339,7 +340,7 @@
   <div class=" max-width-hpa mx-auto d-block padding-top-3">
     <div class="row">
 
-      <div class="col-lg-4 col-sm-10  col-md-6 col-12 my-auto mx-auto d-block padding-mobile-bottom text-center-ipad-mobile ">
+      <div class="col-lg-4 col-sm-10  col-md-6 col-12 my-auto mx-auto d-block padding-mobile-bottom text-center-ipad-mobile left">
         <p class="bold">03. Fill in the details.</p>
         <p class="padding-top medium">
          A 3 step flow of collecting the data for a sportsmoment. First you check the attenders and set the score. The next 2 steps are for goal scorers and assist givers.
@@ -348,7 +349,7 @@
       
 
 
-      <div class="col-lg-4 col-sm-6 col-md-6 col-10 d-block mx-auto">
+      <div class="col-lg-4 col-sm-6 col-md-6 col-10 d-block mx-auto right">
       
         <script>(typeof navigator !== "undefined") && (function(root, factory) {
           if (typeof define === "function" && define.amd) {
@@ -390,7 +391,7 @@
 </section>
 
 <section id="achievements" class=" padding-top-3">
-  <div class="vertical-padding-3 horizontal-padding-2 d-block mx-auto">
+  <div class="vertical-padding-3 horizontal-padding-2 d-block mx-auto bottom">
     <div class="row">
       <div class="col-lg-12">
         <h3 class="txt-center">Points<span style="color:#4964EA;">.</span></h3>
@@ -413,7 +414,7 @@
 </section>
 
 <section id="achievements" class=" vertical-padding-3">
-  <div class="horizontal-padding-2 d-block mx-auto">
+  <div class="horizontal-padding-2 d-block mx-auto bottom">
     <div class="row">
       <div class="col-lg-12">
         <h3 class="txt-center">Achievements<span style="color:#4964EA;">.</span></h3>
@@ -458,7 +459,7 @@
 
 
 <section id="achievements" class=" vertical-padding-3">
-  <div class="horizontal-padding-1 d-block mx-auto ">
+  <div class="horizontal-padding-1 d-block mx-auto bottom">
     <div class="row">
       <div class="col-lg-12 padding-bottom-2">
         <h3 class="txt-center">Sketches<span style="color:#4964EA;">.</span></h3>
@@ -489,7 +490,7 @@
 </section>
 
 <section id="Lo-fi wireframes" class=" vertical-padding-3">
-  <div class="horizontal-padding-2 d-block mx-auto">
+  <div class="horizontal-padding-2 d-block mx-auto bottom">
     <div class="row">
       <div class="col-lg-12 padding-bottom-2">
         <h3 class="txt-center">Lo-Fi Wireframes<span style="color:#4964EA;">.</span></h3>
@@ -526,7 +527,7 @@
 </section>
 
 <section id="Lo-fi wireframes" class=" vertical-padding-3">
-  <div class="horizontal-padding-2 d-block mx-auto">
+  <div class="horizontal-padding-2 d-block mx-auto bottom">
     <div class="row">
       <div class="col-lg-12 padding-bottom-2">
         <h3 class="txt-center">Hi-Fi Wireframes<span style="color:#4964EA;">.</span></h3>
@@ -632,6 +633,8 @@
     document.documentElement.scrollTop = 0;
   }
   </script>
+    <script src="./javascript/main.js"></script>
+
 </body>
 
 
