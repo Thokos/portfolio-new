@@ -33,6 +33,7 @@
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
  
     <!-- Nav Bar -->
     <div class="container-fluid">
@@ -62,8 +63,8 @@
         </div>
       </nav>
     </div>
-
-    <section id="intro" class="padding-top-3 bg-white">
+    
+    <section id="intro" class="padding-top-3 bg-white ">
       <!-- Title -->
       <div id="about-me-start" class="row horizontal-padding-2 vertical-padding-2">
         <div class="col-lg-6 left">
@@ -136,7 +137,7 @@
     </section>
 
 
-    <section id="tools" class="bg-white one-index about-me-padding">
+    <section id="tools" class="bg-white one-index about-me-padding ">
       <div class="row horizontal-padding-2 no-padding-l-r">
         <div class="col-lg-4 col-md-4 col-sm-12 bottom">
           <h3 class="about-me-h3 ">
@@ -170,7 +171,7 @@
       </div>
       
     </section>
-
+  </div>
 
   <!-- Begin Work Experience Section-->
     <section id="experience" class="bg-white one-index about-me-padding">
@@ -303,7 +304,6 @@
         </div>
       </div>
     </section>
-  </div>
 
   <!-- Footer -->
   <footer class="row footer position-center" id="contact">
@@ -318,26 +318,15 @@
     <div class="col-sm-3 footer-link-padding-mobile col-12 txt-center"><a href="https://dribbble.com/Tkosters" target="_blank" class="footer-link">Dribbble</a></div>
   </div>
 
-
 <script src="./javascript/rellax.min.js"></script>
 
 <script>
   var rellax = new Rellax('.rellax');
 </script>
 
-<script>
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-75px";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-  </script>
   <script src="./javascript/main.js"></script>
+  <script src="./javascript/smooth.js"></script>
+
 </body>
 
 
