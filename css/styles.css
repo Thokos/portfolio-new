@@ -115,6 +115,10 @@ h5 {
   text-decoration: none;
 }
 
+.bottom{
+  opacity:0;
+}
+
 .txt-center{
   text-align:center;
 }
@@ -226,20 +230,9 @@ h5 {
   padding-bottom:128px;
 }
 
-#in-short{
-  padding-top:280px;
-  padding-bottom:70px;
-  background-color: white;
-  z-index:0;
-}
 
 .in-short-text{
   text-align:center;
-}
-
-#my-process{
-  padding-top:130px;
-  padding-bottom:160px;
 }
 
 .padding-bottom{
@@ -377,8 +370,8 @@ h5 {
 
 .circle-2 {
   position:absolute;
-  width:800px;
-  height:800px;
+  width:750px;
+  height:750px;
   background-color: #F5F7FF;
   border-radius: 50%;
   margin-left: auto;
@@ -577,7 +570,6 @@ h5 {
   width:100%;
 }
 
-
 .full-w{
   width:100%;
 }
@@ -675,10 +667,6 @@ h5 {
     padding:15px 0;
   }
 
-  #my-process{
-    padding-top:80px;
-    padding-bottom:100px;
-  }
 }
 
 @media (max-width: 990px) {
@@ -689,10 +677,6 @@ h5 {
     padding-bottom:64px;
   }
 
-  #in-short{
-    padding-top:160px;
-    padding-bottom:10px;
-  }
 
  .homepage-project-paragraph, .button{
     font-size: 16px;
