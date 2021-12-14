@@ -429,7 +429,9 @@ h5 {
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
+  background-color:#F5F7FF;
 }
+
 
 .carousel-control-prev{
   background-color:transparent;
@@ -462,6 +464,7 @@ h5 {
  .carousel-control-next-icon {
    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230C0F1E' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
  }
+ 
 
 /* END Hockey Planner App SECTION */
 
